@@ -20,8 +20,8 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Build with Gradle (using gradle binary)
+      - name: Build with Gradle
         run: gradle build
 
-      - name: Run tests
-        run: gradle test
+      - name: Run tests with verbose output
+        run: gradle test --info
